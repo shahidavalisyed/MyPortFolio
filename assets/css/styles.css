@@ -167,7 +167,7 @@ img {
 
 .nav__toggle {
   color: var(--second-color);
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
 }
 
@@ -238,6 +238,42 @@ img {
   width: 360px;
 }
 
+
+.vert-move {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+.vert-move {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+
+.vert-move1{
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate-reverse;
+}
+.vert-move1{
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate-reverse;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
 /*BUTTONS*/
 .button {
   display: inline-block;
@@ -246,8 +282,9 @@ img {
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: .5rem;
-  margin-top:9px;
   transition: .3s;
+  margin-left: 5px;
+  margin-top: 9px;
 }
 
 .button:hover {
